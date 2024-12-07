@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebidas</title>
+    <script>
+        fetch('./styles/styles_bebidas.html')
+            .then(response => response.text())
+            .then(data => {
+                const tempDiv = document.createElement('div');
+                tempDiv.innerHTML = data;
+                const style = tempDiv.querySelector('style');
+                if (style) {
+                    document.head.appendChild(style);
+                }
+            });
+    </script>
+</head>
+<body>
+    <div class="nav_bar">
+        <nav class="botones">
+            <a href="index.html" class="logo_navbar"><img src="./img/logo.png" class="logo_navbar"></a>
+            <a href="index.html" class="boton_inicio">Inicio</a>
+            <a href="pizzas.html" class="boton_pizzas">Pizzas</a>
+            <a href="nuestros_esp.html" class="boton_espec">Nuestros Especiales</a>
+            <a href="contactenos.html" class="boton_contact">Contactenos</a>
+            <a href="quienes_somos.html" class="boton_nosotros">¿Quiénes somos?</a>
+            <a href="cerrar_sesion.html" class="cerrar_sesion">Cerrar Sesión</a>
+        </nav>
+    </div>
+
+    <div class="contenedor_bebidas">
+    <a href="./bebidas_html/sodas_lata.html">
+        <div class="box_1_bebidas_lata">
+            <img src="./img/bebidas/fondo_principal_lata.png" class="latas">
+            <h4 class="texto_bebidas1">SODAS EN LATAS</h4>
+        </div>
+    </a>
+    <a href="./bebidas_html/sodas_botella.html">
+        <div class="box_1_bebidas_botellas">
+            <img src="./img/bebidas/fondo_principal_botellas.png" class="botellas">
+            <h4 class="texto_bebidas2">SODAS EN BOTELLAS</h4>
+        </div>
+    </a>
+    </div>
+
+
+    <div class="fondo_derecha"></div>
+    <div class="fondo_izquierda"></div>
+
+    <div class="footer">
+        <div class="footer_boxes1">
+            <h4 class="footer_boxes1texto">Servicio al cliente</h4>
+            <a href="./preguntas.html"><h4 class="preguntas">Preguntas frecuentes</h4></a>
+            <a href="./habla.html"><h4 class="habla">Habla con nosotros</h4></a>
+        </div>
+        <div class="linea_centro"></div>
+        <div class="footer_boxes2">
+            <h4 class="footer_boxes1texto">Políticas</h4>
+            <a href="./terminos.html"><h4 class="terminos">Términos de uso</h4></a>
+            <a href="./politicas.html"><h4 class="privacidad">Políticas de privacidad</h4></a>
+        </div>
+
+        <div class="footer_box1">
+            <h4 class="footer_box1texto1">2024 Pizza Mama Mía, 
+                Todos los derechos reservados. El nombre Pizza Mama Mía, logos, imágenes y marcas relacionadas
+                son marcas registradas <br>de Deluxe and Foods S.A. de C.V. para El Salvador
+            </h4>
+        </div>
+        <div class="footer_box2">
+            <h4 class="footer_box2texto2">PEPSI, PEPSI-COLA y el Logo de Pepsi, son marcas registradas de PepsiCo, 
+                Inc. Twitter es una marca registrada de Twitter, Inc. Facebook <br>e Instagram son marcas registrada 
+                de Facebook, Inc.
+            </h4>
+        </div>
+        <div class="contenedor_formas_pago">
+            <h4 class="texto_formas pago">Aceptamos como forma de pago:</h4>
+            <a href="./bancarios.html">
+                <img src="./img/visa.png" class="visa">
+                <img src="./img/mastercard.png" class="mastercard">
+            </a>
+        </div>
+        <div class="contenedor_social">
+            <h4 class="texto_social">También siguenos en</h4>
+            <a href="https://x.com/PizzaMamaMia_Of"><img src="./img/x.png" class="x"></a>
+            <a href="https://www.facebook.com/profile.php?id=61570033917029&mibextid=JRoKGi"><img src="./img/facebook.png" class="facebook"></a>
+            <a href=""><img src="./img/instagram.png" class="instagram"></a>
+        </div>
+    </div>
+</body>
+</html>
